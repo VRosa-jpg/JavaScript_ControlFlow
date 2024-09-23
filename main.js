@@ -22,17 +22,17 @@ function growthOfPlants(weeks) {
 
    // Pruned - if it is more than 80% -- refer to lab
     if (totalAreaOfPlants > (maxCap * .8)) {
-
+      // Ouput statement
         return (`Plants should be pruned!\nPlant Area Amount: ${totalAreaOfPlants}\nMaxCap: ${(maxCap * .8)}`)
 
    // Monitored - between 50% and %80 - because we already have a condition on whether it goes above %80
      } else if (totalAreaOfPlants >= (maxCap * .5) /**&& totalAreaOfPlants < (maxCap * .8)*/) {
-
+      // Ouput statement
       return (`Plants should be Monitored!\nPlant Area Amount: ${totalAreaOfPlants}\nMaxCap: ${(maxCap)}`)
 
    // Planted - should be less than %50 so %50 area has to be more than totalarea of plants
      } else if (totalAreaOfPlants < (maxCap * .5)) {
-
+      // Ouput statement
       return (`More plants should be planted!\nPlant Area Amount: ${totalAreaOfPlants}\nMaxCap: ${(maxCap * .5)}`)
 
      }
@@ -43,7 +43,6 @@ function growthOfPlants(weeks) {
 console.log(growthOfPlants(1))
 console.log(growthOfPlants(2))
 console.log(growthOfPlants(3))
-console.log(maxCap * .5)
 
 
 
