@@ -14,42 +14,42 @@ const maxCap = Math.floor(area / plantPerArea); //98 meters for plant
 
 // Part 1
 
-// function growthOfPlants(weeks) {
-//    // Variable - Plants doubling per week
-//     let doublingPlantPerWeek = Math.pow(weeks, 2) * initialAmountPlant;
+function growthOfPlants(weeks) {
+   // Variable - Plants doubling per week
+    let doublingPlantPerWeek = Math.pow(weeks, 2) * initialAmountPlant;
 
-//    // Variable - Area plants can take up per week
-//     let totalAreaOfPlants = doublingPlantPerWeek * plantPerArea;
+   // Variable - Area plants can take up per week
+    let totalAreaOfPlants = doublingPlantPerWeek * plantPerArea;
 
-//    // Pruned - if it is more than 80% -- refer to lab
-//     if (totalAreaOfPlants > (maxCap * .8)) {
-//       // Ouput statement
-//         return (`Plants should be pruned!\nPlant Area Amount: ${totalAreaOfPlants}\nMaxCap: ${(maxCap * .8)}`)
+   // Pruned - if it is more than 80% -- refer to lab
+    if (totalAreaOfPlants > (maxCap * .8)) {
+      // Ouput statement
+        return (`Plants should be pruned!\nPlant Area Amount: ${totalAreaOfPlants}\nMaxCap: ${(maxCap * .8)}`)
 
-//    // Monitored - between 50% and %80 - because we already have a condition on whether it goes above %80
-//      } else if (totalAreaOfPlants >= (maxCap * .5)) {
-//       // Ouput statement
-//       return (`Plants should be Monitored!\nPlant Area Amount: ${totalAreaOfPlants}\nMaxCap: ${(maxCap)}`)
+   // Monitored - between 50% and %80 - because we already have a condition on whether it goes above %80
+     } else if (totalAreaOfPlants >= (maxCap * .5)) {
+      // Ouput statement
+      return (`Plants should be Monitored!\nPlant Area Amount: ${totalAreaOfPlants}\nMaxCap: ${(maxCap)}`)
 
-//    // Planted - should be less than %50 so %50 area has to be more than totalarea of plants
-//      } else if (totalAreaOfPlants < (maxCap * .5)) {
-//       // Ouput statement
-//       return (`More plants should be planted!\nPlant Area Amount: ${totalAreaOfPlants}\nMaxCap: ${(maxCap * .5)}`)
+   // Planted - should be less than %50 so %50 area has to be more than totalarea of plants
+     } else if (totalAreaOfPlants < (maxCap * .5)) {
+      // Ouput statement
+      return (`More plants should be planted!\nPlant Area Amount: ${totalAreaOfPlants}\nMaxCap: ${(maxCap * .5)}`)
 
-//      }
-//  }
-
-
-
-// console.log(growthOfPlants(1))
-// console.log(growthOfPlants(2))
-// console.log(growthOfPlants(3))
+     }
+ }
 
 
-// let tenWeeksNoPruning = Math.pow(2, 10) * 100 // 102400
+
+console.log(growthOfPlants(1))
+console.log(growthOfPlants(2))
+console.log(growthOfPlants(3))
 
 
-// let newArea = tenWeeksNoPruning * plantPerArea
+let tenWeeksNoPruning = Math.pow(2, 10) * 100 // 102400
+
+
+let newArea = tenWeeksNoPruning * plantPerArea
 
 // Part two
 
