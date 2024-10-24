@@ -49,7 +49,7 @@ console.log(growthOfPlants(3))
 let tenWeeksNoPruning = Math.pow(2, 10) * 100 // 102400
 
 
-let newArea = tenWeeksNoPruning * plantPerArea
+let newAreaTenWeeks = tenWeeksNoPruning * plantPerArea
 
 // Part two
 
